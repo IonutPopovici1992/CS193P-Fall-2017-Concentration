@@ -181,8 +181,8 @@
                                     <action selector="onNewGame:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xOC-L9-AKK"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="lcl-f7-zPY">
-                                <rect key="frame" x="27" y="512" width="266" height="40"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="lcl-f7-zPY">
+                                <rect key="frame" x="28.5" y="512" width="263" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDV-lF-Ox8">
                                         <rect key="frame" x="0.0" y="0.0" width="125.5" height="40"/>
@@ -191,7 +191,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flips: 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJz-8I-qkG">
-                                        <rect key="frame" x="140.5" y="0.0" width="125.5" height="40"/>
+                                        <rect key="frame" x="137.5" y="0.0" width="125.5" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>

@@ -10,7 +10,7 @@ import UIKit
 
 class ConcentrationViewController: UIViewController {
     
-    lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
+    private lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
     
     var numberOfPairsOfCards: Int {
         return (cardButtons.count + 1) / 2
@@ -49,16 +49,16 @@ class ConcentrationViewController: UIViewController {
         }
     }
     
-    var flipCount = 0 {
+    private(set) var flipCount = 0 {
         didSet {
             flipCountLabel.text = "Flips: \(flipCount)"
         }
     }
     
-    @IBOutlet weak var flipCountLabel: UILabel!
-    @IBOutlet weak var gameScoreLabel: UILabel!
+    @IBOutlet weak private var flipCountLabel: UILabel!
+    @IBOutlet weak private var gameScoreLabel: UILabel!
     
-    @IBOutlet var cardButtons: [UIButton]!
+    @IBOutlet private var cardButtons: [UIButton]!
     
     @IBOutlet weak var newGameButton: UIButton! {
         didSet {
