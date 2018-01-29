@@ -51,11 +51,24 @@ class ConcentrationViewController: UIViewController {
     
     private(set) var flipCount = 0 {
         didSet {
-            flipCountLabel.text = "Flips: \(flipCount)"
+            updateFlipCountLabel()
         }
     }
     
-    @IBOutlet weak private var flipCountLabel: UILabel!
+    private func updateFlipCountLabel() {
+        let attributes: [NSAttributedStringKey: Any] = [
+            .strokeWidth: 5.0,
+            .strokeColor: UIColor.orange
+        ]
+        let attributedString = NSAttributedString(string: "Flips: \(flipCount)", attributes: attributes)
+        flipCountLabel.attributedText = attributedString
+    }
+    
+    @IBOutlet weak private var flipCountLabel: UILabel! {
+        didSet {
+            updateFlipCountLabel()
+        }
+    }
     @IBOutlet weak private var gameScoreLabel: UILabel!
     
     @IBOutlet private var cardButtons: [UIButton]!
@@ -114,31 +127,19 @@ class ConcentrationViewController: UIViewController {
         }
     }
     
-    private var emoji = [Int: String]()
+    private var emoji = [Card: String]()
     
     private lazy var emojiChoices: [String] = {
         return theme.emoji
     }()
     
     private func emoji(for card: Card) -> String {
-        if emoji[card.identifier] == nil, emojiChoices.count > 0 {
-            let randomIndex = Int(arc4random_uniform(UInt32(emojiChoices.count - 1)))
-            emoji[card.identifier] = emojiChoices.remove(at: randomIndex)
+        if emoji[card] == nil, emojiChoices.count > 0 {
+            // let randomIndex = Int(arc4random_uniform(UInt32(emojiChoices.count - 1)))
+            let randomIndex = emojiChoices.count.arc4random
+            emoji[card] = emojiChoices.remove(at: randomIndex)
         }
-        return emoji[card.identifier] ?? "?"
+        return emoji[card] ?? "?"
     }
     
-}
-
-extension Int {
-    var arc4random: Int {
-        switch self {
-            case 1...Int.max:
-                return Int(arc4random_uniform(UInt32(self)))
-            case -Int.max..<0:
-                return Int(arc4random_uniform(UInt32(self)))
-            default:
-                return 0
-        }
-    }
 }
