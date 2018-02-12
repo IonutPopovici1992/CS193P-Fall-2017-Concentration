@@ -1,5 +1,5 @@
 //
-//  Int+Concentration.swift
+//  Concentration+Int.swift
 //  Concentration
 //
 //  Created by John on 1/17/18.
