@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		520795F2203441A7001C06F3 /* ViewForSetCard-measures.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 520795F1203441A7001C06F3 /* ViewForSetCard-measures.pdf */; };
 		52143AEF202DC57500379004 /* EngineForGameOfSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52143AEE202DC57500379004 /* EngineForGameOfSet.swift */; };
 		523BCC3D202342A0008858F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523BCC3C202342A0008858F8 /* AppDelegate.swift */; };
 		523BCC3F202342A0008858F8 /* GameOfSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523BCC3E202342A0008858F8 /* GameOfSetViewController.swift */; };
@@ -17,9 +18,15 @@
 		52613740202C579E00CDA5E6 /* DeckOfCardsForGameOfSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5261373F202C579E00CDA5E6 /* DeckOfCardsForGameOfSet.swift */; };
 		52613743202C612E00CDA5E6 /* GameOfSet+Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52613742202C612E00CDA5E6 /* GameOfSet+Int.swift */; };
 		52613747202C68B400CDA5E6 /* SetCardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52613746202C68B400CDA5E6 /* SetCardButton.swift */; };
+		526698E02032F61600690B35 /* SetCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526698DF2032F61600690B35 /* SetCardView.swift */; };
+		526698E22033167900690B35 /* AspectRatioGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526698E12033167900690B35 /* AspectRatioGrid.swift */; };
+		526698E420331BB400690B35 /* GameOfSet+CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526698E320331BB400690B35 /* GameOfSet+CGFloat.swift */; };
+		526698E620331DAC00690B35 /* ViewForSetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526698E520331DAC00690B35 /* ViewForSetCard.swift */; };
+		52F4A7BA2034600800CE3F9D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F4A7B92034600800CE3F9D /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		520795F1203441A7001C06F3 /* ViewForSetCard-measures.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "ViewForSetCard-measures.pdf"; sourceTree = "<group>"; };
 		52143AEE202DC57500379004 /* EngineForGameOfSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineForGameOfSet.swift; sourceTree = "<group>"; };
 		523BCC39202342A0008858F8 /* GameOfSet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfSet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		523BCC3C202342A0008858F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +39,11 @@
 		5261373F202C579E00CDA5E6 /* DeckOfCardsForGameOfSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckOfCardsForGameOfSet.swift; sourceTree = "<group>"; };
 		52613742202C612E00CDA5E6 /* GameOfSet+Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameOfSet+Int.swift"; sourceTree = "<group>"; };
 		52613746202C68B400CDA5E6 /* SetCardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCardButton.swift; sourceTree = "<group>"; };
+		526698DF2032F61600690B35 /* SetCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCardView.swift; sourceTree = "<group>"; };
+		526698E12033167900690B35 /* AspectRatioGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectRatioGrid.swift; sourceTree = "<group>"; };
+		526698E320331BB400690B35 /* GameOfSet+CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameOfSet+CGFloat.swift"; sourceTree = "<group>"; };
+		526698E520331DAC00690B35 /* ViewForSetCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewForSetCard.swift; sourceTree = "<group>"; };
+		52F4A7B92034600800CE3F9D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,14 +76,14 @@
 		523BCC3B202342A0008858F8 /* GameOfSet */ = {
 			isa = PBXGroup;
 			children = (
+				526698DE2032F44200690B35 /* Card */,
+				526698DD2032F22800690B35 /* Controllers */,
 				52613741202C607600CDA5E6 /* Extensions */,
 				523BCC4F20236260008858F8 /* Storyboards */,
 				523BCC4E202343D4008858F8 /* Supporting Files */,
-				5261373D202C4D5900CDA5E6 /* CardForGameOfSet.swift */,
-				5261373F202C579E00CDA5E6 /* DeckOfCardsForGameOfSet.swift */,
-				52613746202C68B400CDA5E6 /* SetCardButton.swift */,
+				526698E12033167900690B35 /* AspectRatioGrid.swift */,
 				52143AEE202DC57500379004 /* EngineForGameOfSet.swift */,
-				523BCC3E202342A0008858F8 /* GameOfSetViewController.swift */,
+				52F4A7B92034600800CE3F9D /* MainView.swift */,
 				523BCC48202342A0008858F8 /* Info.plist */,
 			);
 			path = GameOfSet;
@@ -83,6 +95,7 @@
 				523BCC3C202342A0008858F8 /* AppDelegate.swift */,
 				523BCC43202342A0008858F8 /* Assets.xcassets */,
 				523BCC45202342A0008858F8 /* LaunchScreen.storyboard */,
+				520795F1203441A7001C06F3 /* ViewForSetCard-measures.pdf */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -99,8 +112,29 @@
 			isa = PBXGroup;
 			children = (
 				52613742202C612E00CDA5E6 /* GameOfSet+Int.swift */,
+				526698E320331BB400690B35 /* GameOfSet+CGFloat.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		526698DD2032F22800690B35 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				523BCC3E202342A0008858F8 /* GameOfSetViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		526698DE2032F44200690B35 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				5261373D202C4D5900CDA5E6 /* CardForGameOfSet.swift */,
+				52613746202C68B400CDA5E6 /* SetCardButton.swift */,
+				526698DF2032F61600690B35 /* SetCardView.swift */,
+				526698E520331DAC00690B35 /* ViewForSetCard.swift */,
+				5261373F202C579E00CDA5E6 /* DeckOfCardsForGameOfSet.swift */,
+			);
+			path = Card;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				520795F2203441A7001C06F3 /* ViewForSetCard-measures.pdf in Resources */,
 				523BCC47202342A0008858F8 /* LaunchScreen.storyboard in Resources */,
 				523BCC44202342A0008858F8 /* Assets.xcassets in Resources */,
 				523BCC42202342A0008858F8 /* Main.storyboard in Resources */,
@@ -176,10 +211,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				52143AEF202DC57500379004 /* EngineForGameOfSet.swift in Sources */,
+				52F4A7BA2034600800CE3F9D /* MainView.swift in Sources */,
 				52613747202C68B400CDA5E6 /* SetCardButton.swift in Sources */,
 				5261373E202C4D5900CDA5E6 /* CardForGameOfSet.swift in Sources */,
+				526698E22033167900690B35 /* AspectRatioGrid.swift in Sources */,
+				526698E620331DAC00690B35 /* ViewForSetCard.swift in Sources */,
+				526698E420331BB400690B35 /* GameOfSet+CGFloat.swift in Sources */,
 				523BCC3F202342A0008858F8 /* GameOfSetViewController.swift in Sources */,
 				52613743202C612E00CDA5E6 /* GameOfSet+Int.swift in Sources */,
+				526698E02032F61600690B35 /* SetCardView.swift in Sources */,
 				523BCC3D202342A0008858F8 /* AppDelegate.swift in Sources */,
 				52613740202C579E00CDA5E6 /* DeckOfCardsForGameOfSet.swift in Sources */,
 			);

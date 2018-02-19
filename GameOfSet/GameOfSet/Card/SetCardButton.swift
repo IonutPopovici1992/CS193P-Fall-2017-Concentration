@@ -10,6 +10,7 @@ import UIKit
 
 class SetCardButton: UIButton {
     
+    /*
     var cardIndex: Int = 0
     
     var card: CardForGameOfSet? {
@@ -37,8 +38,8 @@ class SetCardButton: UIButton {
     enum StateOfSetCardButton {
         case unselected
         case selected
-        case selectedAndMatched
         case hinted
+        case selectedAndMatched
     }
     
     var stateOfSetCardButton: StateOfSetCardButton = .unselected {
@@ -53,13 +54,13 @@ class SetCardButton: UIButton {
                 case .selected:
                     layer.borderWidth = LayoutMetricsForCardView.borderWidthIfSelected
                     layer.borderColor = LayoutMetricsForCardView.borderColorIfSelected
-                case .selectedAndMatched:
-                    layer.borderWidth = LayoutMetricsForCardView.borderWidthIfMatched
-                    layer.borderColor = LayoutMetricsForCardView.borderColorIfMatched
                 case .hinted:
                     layer.borderWidth = LayoutMetricsForCardView.borderWidthIfHinted
                     layer.borderColor = LayoutMetricsForCardView.borderColorIfHinted
-                }
+                case .selectedAndMatched:
+                    layer.borderWidth = LayoutMetricsForCardView.borderWidthIfMatched
+                    layer.borderColor = LayoutMetricsForCardView.borderColorIfMatched
+            }
         }
     }
     
@@ -89,4 +90,5 @@ class SetCardButton: UIButton {
         return NSAttributedString(string: returnString, attributes: attributes)
     }
     
+    */
 }

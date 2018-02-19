@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,332 +19,92 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ea-cg-0Bm">
-                                <rect key="frame" x="0.0" y="44" width="375" height="630.33333333333337"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="eTT-s9-J9m">
-                                        <rect key="frame" x="-0.66666666666665719" y="0.0" width="375.33333333333326" height="630.33333333333337"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="xQR-ry-gKf">
-                                                <rect key="frame" x="0.0" y="0.0" width="375.33333333333331" height="104.33333333333333"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBE-Re-5gd" customClass="SetCardButton" customModule="GameOfSet" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="93" height="104.33333333333333"/>
-                                                        <color key="backgroundColor" cyan="0.032223705200000001" magenta="0.037519440049999998" yellow="0.36443704370000002" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <connections>
-                                                            <action selector="onCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Ff-r0-V4X"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCw-0x-Bqq" customClass="SetCardButton" customModule="GameOfSet" customModuleProvider="target">
-                                                        <rect key="frame" x="94" y="0.0" width="93.333333333333314" height="104.33333333333333"/>
-                                                        <color key="backgroundColor" cyan="0.032223705200000001" magenta="0.037519440049999998" yellow="0.36443704370000002" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <connections>
-                                                            <action selector="onCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uEe-Xb-Xf3"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUh-M0-LnG" customClass="SetCardButton" customModule="GameOfSet" customModuleProvider="target">
-                                                        <rect key="frame" x="188.33333333333331" y="0.0" width="93" height="104.33333333333333"/>
-                                                        <color key="backgroundColor" cyan="0.032223705200000001" magenta="0.037519440049999998" yellow="0.36443704370000002" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <connections>
-                                                            <action selector="onCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ooc-dI-Sgr"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSM-fY-MX5" customClass="SetCardButton" customModule="GameOfSet" customModuleProvider="target">
-                                                        <rect key="frame" x="282.33333333333337" y="0.0" width="93" height="104.33333333333333"/>
-                                                        <color key="backgroundColor" cyan="0.032223705200000001" magenta="0.037519440049999998" yellow="0.36443704370000002" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <connections>
-                                                            <action selector="onCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mUz-CE-oQ2"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="6dq-Pj-xKg">
-                                                <rect key="frame" x="0.0" y="105.33333333333334" width="375.33333333333331" height="104"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhh-Pv-eU1" customClass="SetCardButton" customModule="GameOfSet" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="93" height="104"/>
-                                                        <color key="backgroundColor" cyan="0.032223705200000001" magenta="0.037519440049999998" yellow="0.36443704370000002" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <connections>
-                                                            <action selector="onCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I1y-WC-1Tk"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62h-ML-VON" customClass="SetCardButton" customModule="GameOfSet" customModuleProvider="target">
-                                                        <rect key="frame" x="94" y="0.0" width="93.333333333333314" height="104"/>
-                                                        <color key="backgroundColor" cyan="0.032223705200000001" magenta="0.037519440049999998" yellow="0.36443704370000002" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <connections>
-                                                            <action selector="onCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="28u-vi-09n"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuW-Q4-Wfs" customClass="SetCardButton" customModule="GameOfSet" customModuleProvider="target">
-                                                        <rect key="frame" x="188.33333333333331" y="0.0" width="93" height="104"/>
-                                                        <color key="backgroundColor" cyan="0.032223705200000001" magenta="0.037519440049999998" yellow="0.36443704370000002" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <connections>
-                                                            <action selector="onCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zk1-9j-dCU"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIn-hT-4nd" customClass="SetCardButton" customModule="GameOfSet" customModuleProvider="target">
-                                                        <rect key="frame" x="282.33333333333337" y="0.0" width="93" height="104"/>
-                                                        <color key="backgroundColor" cyan="0.032223705200000001" magenta="0.037519440049999998" yellow="0.36443704370000002" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <connections>
-                                                            <action selector="onCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nhp-u1-4nW"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="sB6-MD-wbc">
-                                                <rect key="frame" x="0.0" y="210.33333333333334" width="375.33333333333331" height="104.33333333333334"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJw-Rz-AQk" customClass="SetCardButton" customModule="GameOfSet" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="93" height="104.33333333333333"/>
-                                                        <color key="backgroundColor" cyan="0.032223705200000001" magenta="0.037519440049999998" yellow="0.36443704370000002" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <connections>
-                                                            <action selector="onCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jd0-qW-afS"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lM3-eJ-Ir5" customClass="SetCardButton" customModule="GameOfSet" customModuleProvider="target">
-                                                        <rect key="frame" x="94" y="0.0" width="93.333333333333314" height="104.33333333333333"/>
-                                                        <color key="backgroundColor" cyan="0.032223705200000001" magenta="0.037519440049999998" yellow="0.36443704370000002" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <connections>
-                                                            <action selector="onCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Szu-gu-t49"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZZ-pR-qbt" customClass="SetCardButton" customModule="GameOfSet" customModuleProvider="target">
-                                                        <rect key="frame" x="188.33333333333331" y="0.0" width="93" height="104.33333333333333"/>
-                                                        <color key="backgroundColor" cyan="0.032223705200000001" magenta="0.037519440049999998" yellow="0.36443704370000002" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <connections>
-                                                            <action selector="onCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="46f-rw-aQj"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80b-L5-75m" customClass="SetCardButton" customModule="GameOfSet" customModuleProvider="target">
-                                                        <rect key="frame" x="282.33333333333337" y="0.0" width="93" height="104.33333333333333"/>
-                                                        <color key="backgroundColor" cyan="0.032223705200000001" magenta="0.037519440049999998" yellow="0.36443704370000002" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <connections>
-                                                            <action selector="onCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ytf-cl-ImN"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="1Nu-sO-api">
-                                                <rect key="frame" x="0.0" y="315.66666666666669" width="375.33333333333331" height="104.33333333333331"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTq-Hz-qPd" customClass="SetCardButton" customModule="GameOfSet" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="93" height="104.33333333333333"/>
-                                                        <color key="backgroundColor" cyan="0.032223705200000001" magenta="0.037519440049999998" yellow="0.36443704370000002" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <connections>
-                                                            <action selector="onCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xmx-lb-mC9"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJl-Pn-f5J" customClass="SetCardButton" customModule="GameOfSet" customModuleProvider="target">
-                                                        <rect key="frame" x="94" y="0.0" width="93.333333333333314" height="104.33333333333333"/>
-                                                        <color key="backgroundColor" cyan="0.032223705200000001" magenta="0.037519440049999998" yellow="0.36443704370000002" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <connections>
-                                                            <action selector="onCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nIG-Bl-EVd"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eT-ut-2Bk" customClass="SetCardButton" customModule="GameOfSet" customModuleProvider="target">
-                                                        <rect key="frame" x="188.33333333333331" y="0.0" width="93" height="104.33333333333333"/>
-                                                        <color key="backgroundColor" cyan="0.032223705200000001" magenta="0.037519440049999998" yellow="0.36443704370000002" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <connections>
-                                                            <action selector="onCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HJU-aA-ai7"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMQ-MG-572" customClass="SetCardButton" customModule="GameOfSet" customModuleProvider="target">
-                                                        <rect key="frame" x="282.33333333333337" y="0.0" width="93" height="104.33333333333333"/>
-                                                        <color key="backgroundColor" cyan="0.032223705200000001" magenta="0.037519440049999998" yellow="0.36443704370000002" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <connections>
-                                                            <action selector="onCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B6b-H6-wI8"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="X8M-oG-Z7q">
-                                                <rect key="frame" x="0.0" y="421" width="375.33333333333331" height="104"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEW-4w-3PB" customClass="SetCardButton" customModule="GameOfSet" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="93" height="104"/>
-                                                        <color key="backgroundColor" cyan="0.032223705200000001" magenta="0.037519440049999998" yellow="0.36443704370000002" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <connections>
-                                                            <action selector="onCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5b9-Qj-zqh"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4v8-Bb-J74" customClass="SetCardButton" customModule="GameOfSet" customModuleProvider="target">
-                                                        <rect key="frame" x="94" y="0.0" width="93.333333333333314" height="104"/>
-                                                        <color key="backgroundColor" cyan="0.032223705200000001" magenta="0.037519440049999998" yellow="0.36443704370000002" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <connections>
-                                                            <action selector="onCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RMJ-Xs-IKr"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBU-Db-5bm" customClass="SetCardButton" customModule="GameOfSet" customModuleProvider="target">
-                                                        <rect key="frame" x="188.33333333333331" y="0.0" width="93" height="104"/>
-                                                        <color key="backgroundColor" cyan="0.032223705200000001" magenta="0.037519440049999998" yellow="0.36443704370000002" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <connections>
-                                                            <action selector="onCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rt8-CO-zLB"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaP-se-2kr" customClass="SetCardButton" customModule="GameOfSet" customModuleProvider="target">
-                                                        <rect key="frame" x="282.33333333333337" y="0.0" width="93" height="104"/>
-                                                        <color key="backgroundColor" cyan="0.032223705200000001" magenta="0.037519440049999998" yellow="0.36443704370000002" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <connections>
-                                                            <action selector="onCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bfl-X7-wFJ"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="fi3-ls-D4M">
-                                                <rect key="frame" x="0.0" y="526" width="375.33333333333331" height="104.33333333333337"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIX-YO-J2b" customClass="SetCardButton" customModule="GameOfSet" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="93" height="104.33333333333333"/>
-                                                        <color key="backgroundColor" cyan="0.032223705200000001" magenta="0.037519440049999998" yellow="0.36443704370000002" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <connections>
-                                                            <action selector="onCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rXU-ip-H47"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkR-na-qdC" customClass="SetCardButton" customModule="GameOfSet" customModuleProvider="target">
-                                                        <rect key="frame" x="94" y="0.0" width="93.333333333333314" height="104.33333333333333"/>
-                                                        <color key="backgroundColor" cyan="0.032223705200000001" magenta="0.037519440049999998" yellow="0.36443704370000002" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <connections>
-                                                            <action selector="onCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3BY-nM-oyX"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeA-nx-qR2" customClass="SetCardButton" customModule="GameOfSet" customModuleProvider="target">
-                                                        <rect key="frame" x="188.33333333333331" y="0.0" width="93" height="104.33333333333333"/>
-                                                        <color key="backgroundColor" cyan="0.032223705200000001" magenta="0.037519440049999998" yellow="0.36443704370000002" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <connections>
-                                                            <action selector="onCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eIn-MH-fmM"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76C-Lm-GGL" customClass="SetCardButton" customModule="GameOfSet" customModuleProvider="target">
-                                                        <rect key="frame" x="282.33333333333337" y="0.0" width="93" height="104.33333333333333"/>
-                                                        <color key="backgroundColor" cyan="0.032223705200000001" magenta="0.037519440049999998" yellow="0.36443704370000002" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <connections>
-                                                            <action selector="onCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DzG-eq-6ay"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="eTT-s9-J9m" firstAttribute="centerY" secondItem="9Ea-cg-0Bm" secondAttribute="centerY" id="Y8f-u6-ufH"/>
-                                    <constraint firstItem="eTT-s9-J9m" firstAttribute="height" secondItem="9Ea-cg-0Bm" secondAttribute="height" id="iTN-fd-45u"/>
-                                    <constraint firstItem="eTT-s9-J9m" firstAttribute="centerX" secondItem="9Ea-cg-0Bm" secondAttribute="centerX" id="jho-YA-yCB"/>
-                                    <constraint firstItem="eTT-s9-J9m" firstAttribute="width" secondItem="9Ea-cg-0Bm" secondAttribute="width" id="vb6-vb-gad"/>
-                                </constraints>
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="9Ea-cg-0Bm" customClass="MainView" customModule="GameOfSet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="375" height="654.33333333333337"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.91372549020000005" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="jJI-25-bKt">
-                                <rect key="frame" x="32" y="690.33333333333337" width="311" height="71.666666666666629"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="jJI-25-bKt">
+                                <rect key="frame" x="0.0" y="706.33333333333337" width="375" height="71.666666666666629"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="FaZ-1t-yZR">
-                                        <rect key="frame" x="0.0" y="0.0" width="103" height="71.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="93.666666666666671" height="71.666666666666671"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDk-LZ-1LW">
-                                                <rect key="frame" x="0.0" y="0.0" width="103" height="35.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="93.666666666666671" height="35.333333333333336"/>
                                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="Hint"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                </variation>
                                                 <connections>
-                                                    <action selector="onHintButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ufg-mt-aWQ"/>
+                                                    <action selector="onHintButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QyU-G3-EXi"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SeF-Ps-3w7">
-                                                <rect key="frame" x="0.0" y="36.333333333333258" width="103" height="35.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="36.333333333333258" width="93.666666666666671" height="35.333333333333343"/>
                                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="New Game"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                </variation>
                                                 <connections>
-                                                    <action selector="onNewGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vuG-0o-YHV"/>
+                                                    <action selector="onNewGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pFW-Uo-Rpd"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="MDk-LZ-1LW" firstAttribute="width" secondItem="SeF-Ps-3w7" secondAttribute="width" id="D7G-Ii-CdQ"/>
-                                        </constraints>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Pz-4V-WaO">
-                                        <rect key="frame" x="104" y="0.0" width="103" height="71.666666666666671"/>
+                                        <rect key="frame" x="97.666666666666671" y="0.0" width="179.66666666666663" height="71.666666666666671"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                        </variation>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QjO-re-dcQ">
-                                        <rect key="frame" x="208" y="0.0" width="103" height="71.666666666666671"/>
+                                        <rect key="frame" x="281.33333333333331" y="0.0" width="93.666666666666686" height="71.666666666666671"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="3"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        </variation>
                                         <connections>
                                             <action selector="onDrawCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lp6-it-o1g"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="QjO-re-dcQ" firstAttribute="width" relation="lessThanOrEqual" secondItem="jJI-25-bKt" secondAttribute="width" multiplier="0.25" id="HUU-eR-t33"/>
+                                    <constraint firstItem="FaZ-1t-yZR" firstAttribute="width" relation="lessThanOrEqual" secondItem="jJI-25-bKt" secondAttribute="width" multiplier="0.25" id="SgS-Bh-K8f"/>
+                                    <constraint firstItem="5Pz-4V-WaO" firstAttribute="width" relation="lessThanOrEqual" secondItem="jJI-25-bKt" secondAttribute="width" multiplier="0.5" id="g7L-hS-Rqb"/>
+                                </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="9Ea-cg-0Bm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0LV-oQ-dlN"/>
-                            <constraint firstItem="jJI-25-bKt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="XVQ-rI-4a6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jJI-25-bKt" secondAttribute="bottom" constant="16" id="ak1-Pf-RDG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jJI-25-bKt" secondAttribute="trailing" constant="32" id="cV9-RH-7qp"/>
-                            <constraint firstItem="jJI-25-bKt" firstAttribute="top" secondItem="9Ea-cg-0Bm" secondAttribute="bottom" constant="16" id="iIh-4S-59B"/>
+                            <constraint firstItem="9Ea-cg-0Bm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="75l-s8-jxK"/>
+                            <constraint firstItem="9Ea-cg-0Bm" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="JLk-h1-RPN"/>
+                            <constraint firstItem="jJI-25-bKt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Oa7-an-Nbp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jJI-25-bKt" secondAttribute="bottom" id="ak1-Pf-RDG"/>
+                            <constraint firstItem="jJI-25-bKt" firstAttribute="top" secondItem="9Ea-cg-0Bm" secondAttribute="bottom" constant="8" id="iIh-4S-59B"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Ea-cg-0Bm" secondAttribute="trailing" id="kad-wD-YRc"/>
+                            <constraint firstItem="jJI-25-bKt" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="m2i-NJ-1UE"/>
                             <constraint firstItem="9Ea-cg-0Bm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="whl-X9-5LB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="drawCardsButton" destination="QjO-re-dcQ" id="tk4-KJ-YHg"/>
-                        <outlet property="hintButton" destination="MDk-LZ-1LW" id="9us-Fg-aCn"/>
-                        <outlet property="scoreLabel" destination="5Pz-4V-WaO" id="laf-Sb-7A6"/>
-                        <outlet property="startNewGameButton" destination="SeF-Ps-3w7" id="rsQ-Qj-uic"/>
-                        <outletCollection property="cardButtons" destination="VBE-Re-5gd" collectionClass="NSMutableArray" id="Lst-Bx-R6t"/>
-                        <outletCollection property="cardButtons" destination="WCw-0x-Bqq" collectionClass="NSMutableArray" id="Hjf-Ih-17F"/>
-                        <outletCollection property="cardButtons" destination="bUh-M0-LnG" collectionClass="NSMutableArray" id="GeT-IN-WUD"/>
-                        <outletCollection property="cardButtons" destination="vSM-fY-MX5" collectionClass="NSMutableArray" id="6iO-a8-CJt"/>
-                        <outletCollection property="cardButtons" destination="Vhh-Pv-eU1" collectionClass="NSMutableArray" id="qhv-k8-9Dc"/>
-                        <outletCollection property="cardButtons" destination="62h-ML-VON" collectionClass="NSMutableArray" id="tZ9-Rm-VKn"/>
-                        <outletCollection property="cardButtons" destination="cuW-Q4-Wfs" collectionClass="NSMutableArray" id="VKn-WE-aid"/>
-                        <outletCollection property="cardButtons" destination="LIn-hT-4nd" collectionClass="NSMutableArray" id="vx0-ay-4zH"/>
-                        <outletCollection property="cardButtons" destination="BJw-Rz-AQk" collectionClass="NSMutableArray" id="y4O-ho-Vqh"/>
-                        <outletCollection property="cardButtons" destination="lM3-eJ-Ir5" collectionClass="NSMutableArray" id="EHx-q1-cg8"/>
-                        <outletCollection property="cardButtons" destination="PZZ-pR-qbt" collectionClass="NSMutableArray" id="B5m-cw-fRE"/>
-                        <outletCollection property="cardButtons" destination="80b-L5-75m" collectionClass="NSMutableArray" id="tlY-G6-23L"/>
-                        <outletCollection property="cardButtons" destination="VTq-Hz-qPd" collectionClass="NSMutableArray" id="Wcz-x6-qeq"/>
-                        <outletCollection property="cardButtons" destination="NJl-Pn-f5J" collectionClass="NSMutableArray" id="xeW-WK-UfA"/>
-                        <outletCollection property="cardButtons" destination="6eT-ut-2Bk" collectionClass="NSMutableArray" id="cAT-Kj-Mzl"/>
-                        <outletCollection property="cardButtons" destination="MMQ-MG-572" collectionClass="NSMutableArray" id="z09-Db-HUB"/>
-                        <outletCollection property="cardButtons" destination="EEW-4w-3PB" collectionClass="NSMutableArray" id="mWG-Ng-vFd"/>
-                        <outletCollection property="cardButtons" destination="4v8-Bb-J74" collectionClass="NSMutableArray" id="tSz-BG-Gcy"/>
-                        <outletCollection property="cardButtons" destination="VBU-Db-5bm" collectionClass="NSMutableArray" id="7rA-F4-oBE"/>
-                        <outletCollection property="cardButtons" destination="KaP-se-2kr" collectionClass="NSMutableArray" id="hi3-DY-B1I"/>
-                        <outletCollection property="cardButtons" destination="TIX-YO-J2b" collectionClass="NSMutableArray" id="sVi-2C-lAH"/>
-                        <outletCollection property="cardButtons" destination="kkR-na-qdC" collectionClass="NSMutableArray" id="B5A-96-1l0"/>
-                        <outletCollection property="cardButtons" destination="zeA-nx-qR2" collectionClass="NSMutableArray" id="w6E-yc-Ugc"/>
-                        <outletCollection property="cardButtons" destination="76C-Lm-GGL" collectionClass="NSMutableArray" id="xwX-wn-T8B"/>
+                        <outlet property="hintButton" destination="MDk-LZ-1LW" id="iyA-5D-fSM"/>
+                        <outlet property="mainView" destination="9Ea-cg-0Bm" id="Ump-FX-Hwa"/>
+                        <outlet property="scoreLabel" destination="5Pz-4V-WaO" id="G1e-sX-Eq9"/>
+                        <outlet property="startNewGameButton" destination="SeF-Ps-3w7" id="5DM-fd-svf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
