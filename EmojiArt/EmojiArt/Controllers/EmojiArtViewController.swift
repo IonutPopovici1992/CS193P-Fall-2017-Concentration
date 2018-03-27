@@ -59,9 +59,33 @@ class EmojiArtViewController: UIViewController, UIDropInteractionDelegate, UIScr
         }
     }
     
+    static var myClassVar: Int = 0
+    var myInstanceVar: Int = 0
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let emojiVC1 = EmojiArtViewController()
+        let emojiVC2 = EmojiArtViewController()
+        print("<<< [11]: \(emojiVC1.myInstanceVar)")
+        print("<<< [21]: \(emojiVC2.myInstanceVar)")
+        emojiVC1.myInstanceVar = 26
+        print("<<< [12]: \(emojiVC1.myInstanceVar)")
+        print("<<< [22]: \(emojiVC2.myInstanceVar)")
+        
+        print("<<< [1]: \(EmojiArtViewController.myClassVar)")
+        EmojiArtViewController.myClassVar = 51
+        print("<<< [2]: \(EmojiArtViewController.myClassVar)")
+        EmojiArtViewController.myClassVar = 12
+        print("<<< [3]: \(EmojiArtViewController.myClassVar)")
+        EmojiArtViewController.myClassVar = 1
+        print("<<< [4]: \(EmojiArtViewController.myClassVar)")
+        EmojiArtViewController.myClassVar = 0
+        print("<<< [5]: \(EmojiArtViewController.myClassVar)")
+    }
+    
     private var font: UIFont {
-        return UIFontMetrics(forTextStyle: .body)
-            .scaledFont(for: UIFont.preferredFont(forTextStyle: .body).withSize(64.0))
+        return UIFont.bodyScaledFont64Size
     }
     
     var emojis = "😀🎁✈️🎱🍎🐶🐝☕️🎼🚲♣️👨‍🎓✏️🌈🤡🎓👻☎️".map { String($0) }

@@ -15,4 +15,6 @@ extension UIFont {
         return withSize(pointSize * factor)
     }
 
+    static var bodyScaledFont64Size = UIFontMetrics(forTextStyle: .body)
+        .scaledFont(for: UIFont.preferredFont(forTextStyle: .body).withSize(64.0))
 }
