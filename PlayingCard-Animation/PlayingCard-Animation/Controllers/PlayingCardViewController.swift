@@ -54,19 +54,35 @@ class PlayingCardViewController: UIViewController {
     var lastChosenCardView: PlayingCardView?
     
     @objc func flipCard(_ recognizer: UITapGestureRecognizer) {
+        func transitionFlipFromLeft(forView view: PlayingCardView, withCompletion: ((Bool) -> Void)? = nil) {
+            UIView.transition(
+                with: view,
+                duration: 0.6,
+                options: [.transitionFlipFromLeft],
+                animations: {
+                    view.isFaceUp = !view.isFaceUp
+                },
+                completion: withCompletion)
+        }
+        
+        func transitionFlipFromLeft2(forView view: PlayingCardView, withCompletion: ((Bool) -> Void)? = nil) {
+            UIView.transition(
+                with: view,
+                duration: 0.6,
+                options: [.transitionFlipFromLeft],
+                animations: {
+                    view.isFaceUp = false
+                },
+                completion: withCompletion)
+        }
+        
         switch recognizer.state {
             case .ended:
                 if let chosenCardView = recognizer.view as? PlayingCardView, faceUpCardViews.count < 2 {
                     lastChosenCardView = chosenCardView
                     cardBehavior.removeItem(chosenCardView)
-                    UIView.transition(
-                        with: chosenCardView,
-                        duration: 0.6,
-                        options: [.transitionFlipFromLeft],
-                        animations: {
-                            chosenCardView.isFaceUp = !chosenCardView.isFaceUp
-                        },
-                        completion: { finished in
+                    transitionFlipFromLeft(forView: chosenCardView,
+                                           withCompletion: { finished in
                             let cardsToAnimate = self.faceUpCardViews
                             if self.faceUpCardViewsMatch {
                                 UIViewPropertyAnimator.runningPropertyAnimator(
@@ -102,17 +118,10 @@ class PlayingCardViewController: UIViewController {
                             } else if cardsToAnimate.count == 2 {
                                 if chosenCardView == self.lastChosenCardView {
                                     cardsToAnimate.forEach { cardView in
-                                        UIView.transition(
-                                            with: cardView,
-                                            duration: 0.6,
-                                            options: [.transitionFlipFromLeft],
-                                            animations: {
-                                                cardView.isFaceUp = false
-                                            },
-                                            completion: { finished in
-                                                self.cardBehavior.addItem(cardView)
-                                            }
-                                        )
+                                        transitionFlipFromLeft2(forView: chosenCardView,
+                                                                withCompletion: { finished in
+                                                                    self.cardBehavior.addItem(cardView)
+                                                                })
                                     }
                                 }
                             } else {
